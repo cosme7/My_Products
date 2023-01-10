@@ -23,5 +23,4 @@ Projeto Desenvolvido em React.Js, utilizando Styled-Components e React-Router-DO
 
 #### Deploy: Not Today! XD
 
-##### Meu LinkeDin: 
 <a href="https://www.linkedin.com/in/cosme-da-silva-leite-08baa3219/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
