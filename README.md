@@ -1,4 +1,4 @@
-# My Products
+# My Product
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/cosme7/My_Products?color=purple&style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/cosme7/My_Products?color=purple&style=for-the-badge)
