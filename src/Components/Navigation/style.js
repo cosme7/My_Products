@@ -5,6 +5,7 @@ export const Navigation = styled.nav`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 0.5rem;
 
     ul{
         display: flex;
