@@ -8,9 +8,9 @@
 Projeto Desenvolvido em React.Js, utilizando Styled-Components e React-Router-DOM!
 
 ## O que foi Utilizado:
-* Styled-Components
 * React.Js
 * React-Router-DOM
+* Styled-Components
 
 ## O que foi feito & será feito XD:
 * Acessibilidade

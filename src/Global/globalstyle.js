@@ -1,4 +1,8 @@
 import { createGlobalStyle } from "styled-components";
+import Ellight from '../Assets/home_02-5.png';
+import EllDark from '../Assets/home_02-6.png';
+import EllTopLight from '../Assets/home_06.png';
+import EllTopDark from '../Assets/home_06-1.png';
 
 export default createGlobalStyle`
 
@@ -34,6 +38,11 @@ export default createGlobalStyle`
     --clr-logo: #173A56;
     /* Border */
     --btn-border: 1px solid #BCD0E5;
+    /* Background-Image */
+    --img-light-bt: url(${Ellight});
+    --img-dark-bt: url(${EllDark});
+    --img-light-tp: url(${EllTopLight});
+    --img-dark-tp: url(${EllTopDark});
 }
 
 body{

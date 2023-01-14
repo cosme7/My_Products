@@ -12,7 +12,7 @@ export const Btn = styled.button`
     cursor: pointer;
 
     @media screen and (max-width:48em){
-        padding: .6em 1.2em;
+        padding: .9em 1.5em;
     };
 
     ${({btnBorder}) => btnBorder !== 'border' && css`
