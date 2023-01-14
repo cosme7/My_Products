@@ -69,11 +69,19 @@ export default function Products({background='normal'}) {
           </S.PlansBox>
         </S.Container>
         <S.Container background='normal'>
-          <div>
+          <S.SupBox>
             <img src={Search} alt='Support' title='Support' />
-            <div>
-            </div>
-          </div>
+            <S.SupTxt>
+              <h6>Easier decision making for</h6>
+              <h2>Customer Support</h2>
+              <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
+              <ul>
+                <li>Never worry about overpaying for your energy again.</li>
+                <li>We will only switch you to energy companies that we trust and will treat you right.</li>
+                <li>We track the markets daily and know where the savings are.</li>
+              </ul>
+            </S.SupTxt>
+          </S.SupBox>
         </S.Container>
         <S.Container background='normal'>
           <S.PlansBox>

@@ -1,4 +1,7 @@
 import styled, {css} from "styled-components";
+import Orange from '../../Assets/home_04-1.svg'
+import Red from '../../Assets/home_04-2.svg'
+import Blue from '../../Assets/home_04-3.svg'
 
 export const Container = styled.section`
     padding-block: 4rem;
@@ -138,6 +141,7 @@ export const PlansBox = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 
     div{
         display: flex;
@@ -152,7 +156,7 @@ export const PlansBox = styled.div`
     }
 
     h2{
-        font-size: clamp(2rem, 2.4vw, 3rem);
+        font-size: clamp(1.9rem, 2.4vw, 3rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-700);
         color: var(--txt-clr) 
@@ -215,6 +219,99 @@ export const PlansBox = styled.div`
     @media screen and (max-width:25em){
         img{
             width: 100%;
+        }
+    };
+`;
+
+export const SupBox = styled.div`
+    width: 85%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    img{
+        width: 50%;
+    }
+
+    @media screen and (max-width:53em){
+        width: 90%;
+        flex-direction: column;
+        gap: 2rem;
+
+        img{
+            width: 80%;
+        }
+    };
+
+    @media screen and (max-width:25em){
+        img{
+            width: 100%;
+        }
+    }
+`;
+
+export const SupTxt = styled.div`
+    h6{
+        font-size: clamp(1rem, 1.1vw, 1.4rem);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-600);
+        color: var(--txt-clr)   
+    }
+
+    h2{
+        font-size: clamp(1.9rem, 2.4vw, 3rem);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-700);
+        color: var(--txt-clr) 
+    }
+
+    p{
+        max-width: 45ch;
+        margin-block: 1.5rem;
+        font-size: clamp(1rem, 1.1vw, 1.4rem);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-400);
+        color: var(--txt-clr) 
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin-inline-start: 3.5rem;
+        gap: 1.5rem;
+        list-style: none;
+    }
+
+    li{
+        max-width: 36ch;
+        font-size: clamp(.85rem, 1.1vw, 1.4rem);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-400);
+        color: var(--txt-clr); 
+        position: relative;
+    }
+
+    li::before{
+        content: url(${Orange});
+        position: absolute;
+        display: block;
+        left: -3.5rem;
+        top: .5rem;
+    }
+
+    li:nth-child(2)::before{
+        content: url(${Red});
+    }
+
+    li:nth-child(3)::before{
+        content: url(${Blue});
+    }
+
+    @media screen and (max-width:53em){
+        p{
+            margin-block: .5rem; 
         }
     };
 `;
