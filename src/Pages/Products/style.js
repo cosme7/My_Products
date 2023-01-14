@@ -10,11 +10,11 @@ export const Container = styled.section`
 
     ${({background}) => background !== 'normal' && css`
         background-image: var(--img-light-bt);
+        background-position: center bottom;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: 100% 50%;
 
         @media screen and (max-width:53em){
-            background-position: center bottom;
             background-size: 200% 40%;
         };
     `};
@@ -57,6 +57,7 @@ export const WorkTxt = styled.div`
         font-size: clamp(1.8rem, 3.5vw, 4.5rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-700);
+        color: var(--txt-clr);
     }
 
     p{
@@ -65,6 +66,7 @@ export const WorkTxt = styled.div`
         font-size: clamp(1rem, 1.5vw, 2rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-400);
+        color: var(--txt-clr);
     }
 
     div{
@@ -126,6 +128,93 @@ export const BuiltBox = styled.div`
             flex-direction: column;
             align-items: center;
             gap: 2.5rem;
+        }
+    };
+`;
+
+export const PlansBox = styled.div`
+    width: 85%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h5{
+        font-size: clamp(1rem, 1.1vw, 1.4rem);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-600);
+        color: var(--txt-clr)        
+    }
+
+    h2{
+        font-size: clamp(2rem, 2.4vw, 3rem);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-700);
+        color: var(--txt-clr) 
+    }
+
+    p{
+        max-width: 47ch;
+        font-size: clamp(1rem, 1.1vw, 1.4rem);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-400);
+        color: var(--txt-clr) 
+    }
+
+    .PlansList{
+        margin-block-start: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        list-style: none;
+
+        h6{
+            line-height: 2.5;
+            font-size: clamp(1.05rem, 1.2vw, 1.5rem);
+            font-family: var(--ff-primary);
+            font-weight: var(--fw-600);
+            color: var(--txt-clr)
+        }
+
+        p{
+            max-width: 47ch;
+            font-size: clamp(1rem, 1.1vw, 1.4rem);
+            font-family: var(--ff-primary);
+            font-weight: var(--fw-400);
+            color: var(--txt-clr)
+        }
+    };
+
+    img{
+        width: 50%;
+    }
+
+    @media screen and (max-width:53em){
+        width: 90%;
+        flex-direction: column-reverse;
+        gap: 2rem;
+
+        img{
+            width: 80%;
+        }
+
+        .PlansList{
+            margin-block-start: 1rem;
+
+            h6{
+                line-height: 2;
+            }
+        }
+    };
+
+    @media screen and (max-width:25em){
+        img{
+            width: 100%;
         }
     };
 `;

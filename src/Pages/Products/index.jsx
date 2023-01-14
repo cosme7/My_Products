@@ -6,6 +6,9 @@ import Arrow from '../../Assets/home_02-1.svg';
 import Surveys from '../../Assets/home_02-2.svg';
 import Heart from '../../Assets/home_02-3.svg';
 import Time from '../../Assets/home_02-4.svg';
+import Notes from '../../Assets/home_03.png';
+import Search from '../../Assets/home_04.png';
+import Photos from '../../Assets/home_05.png';
 import * as S from './style';
 
 export default function Products({background='normal'}) {
@@ -44,6 +47,53 @@ export default function Products({background='normal'}) {
             </div>
             <Button label='SIGN UP NOW' />
           </S.BuiltBox>
+        </S.Container>
+        <S.Container background='normal'>
+          <S.PlansBox>
+            <div>
+              <h5>Effortless Validation for</h5>
+              <h2>Management</h2>
+              <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
+              <ul className='PlansList'>
+                <li>
+                  <h6>Accessory makers</h6>
+                  <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun.</p>
+                </li>
+                <li>
+                  <h6>Alterationists</h6>
+                  <p>If you are looking for a new way to promote your business that won’t cost you more money,</p>
+                </li>
+              </ul>
+            </div>
+            <img src={Notes} alt='Notes Arquives' title='Notes Arquives' />
+          </S.PlansBox>
+        </S.Container>
+        <S.Container background='normal'>
+          <div>
+            <img src={Search} alt='Support' title='Support' />
+            <div>
+            </div>
+          </div>
+        </S.Container>
+        <S.Container background='normal'>
+          <S.PlansBox>
+            <div>
+              <h5>Optimisation for</h5>
+              <h2>Collaborative</h2>
+              <p>Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior.</p>
+              <ul className='PlansList'>
+                <li>
+                  <h6>Accessory makers</h6>
+                  <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun.</p>
+                </li>
+                <li>
+                  <h6>Alterationists</h6>
+                  <p>If you are looking for a new way to promote your business that won’t cost you more money,</p>
+                </li>
+              </ul>
+            </div>
+            <img src={Photos} alt='Photos Archive' title='Photos Archive' />
+          </S.PlansBox>
         </S.Container>
       </main>
     </>
