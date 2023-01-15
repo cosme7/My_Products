@@ -1,13 +1,12 @@
 import styled, {css} from "styled-components";
 
 export const Container = styled.section`
-    padding-block: 4rem;
+    padding-block: clamp(3rem, 3.7vw, 4.5rem);
     background-color: var(--bg-container);
     background-repeat: no-repeat;
     background-size: 100% 50%;
 
     @media screen and (max-width:53em){
-        padding-block: 3rem;
         background-size: 200% 40%;
     };
 

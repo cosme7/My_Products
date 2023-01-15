@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './style';
 
-export default function CardOffer({img, title, children}) {
+export default function Offer({img, title, children}) {
   return (
     <>
       <S.Card>

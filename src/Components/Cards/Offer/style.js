@@ -6,10 +6,6 @@ export const Card = styled.div`
     align-items: flex-start;
     gap: 1rem;
 
-    img{
-        width: 90px;
-    }
-
     h3{
         font-size: clamp(1.3rem, 1.5vw, 2rem);
         font-family: var(--ff-primary);
