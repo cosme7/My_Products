@@ -1,4 +1,6 @@
 import React from 'react';
+import Container from '../../Components/Container'
+import Wrapper from '../../Components/Wrapper';
 import Button from '../../Components/Button';
 import CardOffer from '../../Components/CardOffer';
 import Hero from '../../Assets/home_01.png';
@@ -9,14 +11,18 @@ import Time from '../../Assets/home_02-4.svg';
 import Notes from '../../Assets/home_03.png';
 import Search from '../../Assets/home_04.png';
 import Photos from '../../Assets/home_05.png';
+import Woman from '../../Assets/home_06-1.svg';
+import OldWoman from '../../Assets/home_06-2.svg';
+import Youth from '../../Assets/home_06-3.svg';
+import OldMen from '../../Assets/home_06-4.svg';
 import * as S from './style';
 
-export default function Products({background='normal'}) {
+export default function Products() {
   return (
     <>
       <main>
-        <S.Container background='normal'>
-          <S.WorkBox>
+        <Container>
+          <Wrapper mobile='column-reverse'>
             <S.WorkTxt>
               <h2>Work at the speed of thought</h2>
               <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
@@ -26,9 +32,9 @@ export default function Products({background='normal'}) {
               </div>
             </S.WorkTxt>
             <img src={Hero} alt='People Talking' title='People Talking' />  
-          </S.WorkBox>
-        </S.Container>
-        <S.Container>
+          </Wrapper>
+        </Container>
+        <Container bg='low'>
           <S.BuiltBox>
             <h2>Product  was Built Specifically for You</h2>
             <div className='CardWrapper'>
@@ -47,14 +53,14 @@ export default function Products({background='normal'}) {
             </div>
             <Button label='SIGN UP NOW' />
           </S.BuiltBox>
-        </S.Container>
-        <S.Container background='normal'>
-          <S.PlansBox>
-            <div>
+        </Container>
+        <Container>
+          <Wrapper mobile='column-reverse'>
+            <S.PlansBox>
               <h5>Effortless Validation for</h5>
               <h2>Management</h2>
               <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
-              <ul className='PlansList'>
+              <ul>
                 <li>
                   <h6>Accessory makers</h6>
                   <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun.</p>
@@ -64,12 +70,12 @@ export default function Products({background='normal'}) {
                   <p>If you are looking for a new way to promote your business that won’t cost you more money,</p>
                 </li>
               </ul>
-            </div>
+            </S.PlansBox>
             <img src={Notes} alt='Notes Arquives' title='Notes Arquives' />
-          </S.PlansBox>
-        </S.Container>
-        <S.Container background='normal'>
-          <S.SupBox>
+          </Wrapper>
+        </Container>
+        <Container>
+          <Wrapper mobile='column'>
             <img src={Search} alt='Support' title='Support' />
             <S.SupTxt>
               <h6>Easier decision making for</h6>
@@ -81,11 +87,11 @@ export default function Products({background='normal'}) {
                 <li>We track the markets daily and know where the savings are.</li>
               </ul>
             </S.SupTxt>
-          </S.SupBox>
-        </S.Container>
-        <S.Container background='normal'>
-          <S.PlansBox>
-            <div>
+          </Wrapper>
+        </Container>
+        <Container>
+          <Wrapper mobile='column-reverse'>
+            <S.PlansBox>
               <h5>Optimisation for</h5>
               <h2>Collaborative</h2>
               <p>Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior.</p>
@@ -99,10 +105,35 @@ export default function Products({background='normal'}) {
                   <p>If you are looking for a new way to promote your business that won’t cost you more money,</p>
                 </li>
               </ul>
-            </div>
+            </S.PlansBox>
             <img src={Photos} alt='Photos Archive' title='Photos Archive' />
-          </S.PlansBox>
-        </S.Container>
+          </Wrapper>
+        </Container>
+        <Container other='high'>
+          <S.QuickBox>
+            <h2>Quick & Easy Process</h2>
+            <p>Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page, Ux/UI?</p>
+            <S.QuickGrid>
+              <div>
+                <img src={Woman} alt="Testimonials" title="Testimonials" />
+                <p>I can take care of your pitch</p>
+              </div>
+              <div>
+                <p>I can prototype your app</p>
+                <img src={OldWoman} alt="Testimonials" title="Testimonials" />
+              </div>
+              <div>
+                <p>I can design you website</p>
+                <img src={Youth} alt="Testimonials" title="Testimonials" />
+              </div>
+              <div>
+                <img src={OldMen} alt="Testimonials" title="Testimonials" />
+                <p>I can help marketing strategy</p>
+              </div>
+            </S.QuickGrid>
+            <Button label='Contact our export' />
+          </S.QuickBox>
+        </Container>
       </main>
     </>
   );

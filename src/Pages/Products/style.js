@@ -1,55 +1,7 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import Orange from '../../Assets/home_04-1.svg'
 import Red from '../../Assets/home_04-2.svg'
 import Blue from '../../Assets/home_04-3.svg'
-
-export const Container = styled.section`
-    padding-block: 4rem;
-    background-color: var(--bg-container);
-
-    @media screen and (max-width:53em){
-        padding-block: 2rem;
-    };
-
-    ${({background}) => background !== 'normal' && css`
-        background-image: var(--img-light-bt);
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: 100% 50%;
-
-        @media screen and (max-width:53em){
-            background-size: 200% 40%;
-        };
-    `};
-`;
-
-export const WorkBox = styled.div`
-    width: 85%;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-
-    img{
-        width: 50%;
-    }
-
-    @media screen and (max-width:48em){
-        width: 90%;
-        flex-direction: column-reverse;
-
-        img{
-            width: 80%;
-        }
-    }
-
-    @media screen and (max-width:25em){
-        img{
-            width: 95%;
-        }
-    }
-`;
 
 export const WorkTxt = styled.div`
     display: flex;
@@ -78,7 +30,7 @@ export const WorkTxt = styled.div`
         gap: .5rem;
     }
 
-    @media screen and (max-width:48em){
+    @media screen and (max-width:53em){
         align-items: center;
 
         h2, p{
@@ -101,7 +53,7 @@ export const BuiltBox = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    gap: clamp(2rem, 4.5vw, 6rem);
 
     h2{
         max-width: 25ch;
@@ -125,28 +77,18 @@ export const BuiltBox = styled.div`
 
     @media screen and (max-width:53em){
         width: 90%;
-        gap: 2rem;
 
         .CardWrapper{
             flex-direction: column;
             align-items: center;
-            gap: 2.5rem;
+            gap: 2rem;
         }
     };
 `;
 
 export const PlansBox = styled.div`
-    width: 85%;
-    margin-inline: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-
-    div{
-        display: flex;
-        flex-direction: column;
-    }
+    flex-direction: column;
 
     h5{
         font-size: clamp(1rem, 1.1vw, 1.4rem);
@@ -170,7 +112,7 @@ export const PlansBox = styled.div`
         color: var(--txt-clr) 
     }
 
-    .PlansList{
+    ul{
         margin-block-start: 2rem;
         display: flex;
         flex-direction: column;
@@ -194,20 +136,8 @@ export const PlansBox = styled.div`
         }
     };
 
-    img{
-        width: 50%;
-    }
-
     @media screen and (max-width:53em){
-        width: 90%;
-        flex-direction: column-reverse;
-        gap: 2rem;
-
-        img{
-            width: 80%;
-        }
-
-        .PlansList{
+        ul{
             margin-block-start: 1rem;
 
             h6{
@@ -215,41 +145,6 @@ export const PlansBox = styled.div`
             }
         }
     };
-
-    @media screen and (max-width:25em){
-        img{
-            width: 100%;
-        }
-    };
-`;
-
-export const SupBox = styled.div`
-    width: 85%;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-
-    img{
-        width: 50%;
-    }
-
-    @media screen and (max-width:53em){
-        width: 90%;
-        flex-direction: column;
-        gap: 2rem;
-
-        img{
-            width: 80%;
-        }
-    };
-
-    @media screen and (max-width:25em){
-        img{
-            width: 100%;
-        }
-    }
 `;
 
 export const SupTxt = styled.div`
@@ -312,6 +207,96 @@ export const SupTxt = styled.div`
     @media screen and (max-width:53em){
         p{
             margin-block: .5rem; 
+        }
+    };
+`;
+
+export const QuickBox = styled.div`
+    width: 85%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2{
+        font-size: clamp(1.9rem, 2.4vw, 3rem);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-700);
+        color: var(--txt-clr)        
+    }
+
+    p{
+        max-width: 55ch;
+        margin-block-start: 1rem;
+        font-size: clamp(1rem, 1.1vw, 1.4rem);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-400);
+        color: var(--txt-clr);
+        text-align: center;
+    }
+
+    button{
+        padding: .7em 1.8em;
+    }
+
+    @media screen and (max-width:53em){
+        width: 90%;
+
+        h2{
+            margin-block-start: 1rem;
+            text-align: center;
+        }
+    };
+`;
+
+export const QuickGrid = styled.div`
+    width: 80%;
+    margin-block: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    gap: clamp(1rem, 4vw, 4.2rem) clamp(1rem, 15vw, 18rem);
+
+    div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: clamp(1rem, 1.5vw, 2rem);
+    }
+
+    div:nth-child(odd){
+        justify-content: flex-start;
+    }
+
+    div:nth-child(even){
+        justify-content: flex-end;
+    }
+
+    p{
+        font-size: clamp(1rem, 1.1vw, 1.4rem);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-400);
+        color: var(--txt-clr);
+    }
+
+    @media screen and (max-width:53em){
+        div:nth-child(odd),
+        div:nth-child(even){
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        div:nth-child(2){
+            grid-area: 4 / 1;
+        }
+    };
+
+    @media screen and (max-width:25em){
+        width: 100%;
+        
+        div:nth-child(odd),
+        div:nth-child(even){
+            justify-content: space-between;
         }
     };
 `;
