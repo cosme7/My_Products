@@ -187,7 +187,19 @@ export const StratsGrid = styled.div`
     width: 100%;
     margin-block: clamp(1rem, 2vw, 3rem);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(1rem, 2vw, 2.5rem);
+
+    @media screen and (max-width:53em){
+        grid-template-columns: 1fr;
+    };
+`;
+
+export const PriceGrid = styled.div`
+    width: 100%;
+    margin-block: clamp(1rem, 2vw, 3rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: clamp(1rem, 2vw, 2.5rem);
 
     @media screen and (max-width:53em){

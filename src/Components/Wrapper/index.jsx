@@ -1,10 +1,10 @@
 import React from 'react'
 import * as S from './style'
 
-export default function Wrapper({align, children, direction, gap, img='image', mobile}) {
+export default function Wrapper({children, img='image', ...rest}) {
   return (
     <>
-     <S.Wrapper align={align} direction={direction} gap={gap} img={img} mobile={mobile}>
+     <S.Wrapper img={img} {...rest}>
         {children}
      </S.Wrapper>
     </>

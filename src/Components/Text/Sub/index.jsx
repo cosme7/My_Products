@@ -1,9 +1,9 @@
 import React from 'react';
 import * as S from './style';
 
-export default function Sub({align, children, margin, mobile, width}) {
+export default function Sub({children, ...rest}){
   return (
-    <S.Sub align={align} margin={margin} mobile={mobile} width={width}>
+    <S.Sub {...rest}>
       {children}
     </S.Sub>
   );

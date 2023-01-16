@@ -10,7 +10,7 @@ export default function rotas(){
         <>
         <Router>
             <ScrollToTop /> 
-            <Header />
+            {/* <Header /> */}
             <Routes>
                 <Route path='/' element={<Products />} />
                 <Route path='/customers' element={<Customers />} />

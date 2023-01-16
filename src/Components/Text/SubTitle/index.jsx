@@ -1,10 +1,10 @@
 import React from 'react'
 import * as S from './style'
 
-export default function SubTitle({align, children, mobile, margin}) {
+export default function SubTitle({children, ...rest}) {
   return (
     <>
-     <S.SubTitle align={align} margin={margin} mobile={mobile}>
+     <S.SubTitle {...rest}>
         {children}
      </S.SubTitle>
     </>

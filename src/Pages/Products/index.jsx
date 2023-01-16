@@ -7,6 +7,7 @@ import SubTitle from '../../Components/Text/SubTitle';
 import Sub from '../../Components/Text/Sub';
 import Offer from '../../Components/Cards/Offer';
 import Strats from '../../Components/Cards/Strats';
+import Price from '../../Components/Cards/Prices';
 import Hero from '../../Assets/home_01.png';
 import Arrow from '../../Assets/home_02-1.svg';
 import Surveys from '../../Assets/home_02-2.svg';
@@ -150,6 +151,23 @@ export default function Products() {
                 <Strats img={Rain} title='Motivation Is The First Step To Success' /> 
                 <Strats img={Sky} title='Success Steps For Your Personal Or Business' /> 
               </S.StratsGrid>
+          </Wrapper>
+        </Container>
+        <Container>
+          <Wrapper align='center' direction='column'>
+            <Title>Price Table</Title>
+            <Sub margin='.25'>We offer competitive price</Sub>
+            <S.PriceGrid>
+              <Price title='Free' price='0' operators='Only 2 Operators'>
+                <Button label='Order Now' />
+              </Price>
+              <Price title='Standard' price='5' operators='5+ Operators' inverted='true'>
+                <Button inverted='true' label='Order Now' />
+              </Price>
+              <Price title='Premium' price='10' operators='10+ Operators'>
+                <Button label='Order Now' />
+              </Price>
+            </S.PriceGrid>
           </Wrapper>
         </Container>
       </main>
