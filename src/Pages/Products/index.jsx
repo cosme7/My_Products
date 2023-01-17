@@ -1,4 +1,5 @@
 import React from 'react';
+//*  Components
 import Container from '../../Components/Container'
 import Wrapper from '../../Components/Wrapper';
 import Button from '../../Components/Button';
@@ -9,6 +10,8 @@ import Offer from '../../Components/Cards/Offer';
 import Strats from '../../Components/Cards/Strats';
 import Price from '../../Components/Cards/Prices';
 import Testimonials from '../../Components/Cards/Testimonials';
+import Call from '../../Components/CTA'
+//* Image's
 import Hero from '../../Assets/home_01.png';
 import Arrow from '../../Assets/home_02-1.svg';
 import Surveys from '../../Assets/home_02-2.svg';
@@ -27,6 +30,7 @@ import Sky from '../../Assets/home_07-3.png';
 import White from '../../Assets/home_08-1.svg';
 import Blue from '../../Assets/home_08-2.svg';
 import Red from '../../Assets/home_08-3.svg';
+//* Styles
 import * as S from './style';
 
 export default function Products() {
@@ -184,6 +188,9 @@ export default function Products() {
               <Testimonials img={Red} />
             </S.ClientGrid>
           </Wrapper>
+        </Container>
+        <Container>
+          <Call />
         </Container>
       </main>
     </>
