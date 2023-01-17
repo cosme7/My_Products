@@ -8,6 +8,7 @@ import Sub from '../../Components/Text/Sub';
 import Offer from '../../Components/Cards/Offer';
 import Strats from '../../Components/Cards/Strats';
 import Price from '../../Components/Cards/Prices';
+import Testimonials from '../../Components/Cards/Testimonials';
 import Hero from '../../Assets/home_01.png';
 import Arrow from '../../Assets/home_02-1.svg';
 import Surveys from '../../Assets/home_02-2.svg';
@@ -23,6 +24,9 @@ import OldMen from '../../Assets/home_06-4.svg';
 import Details from '../../Assets/home_07-1.png';
 import Rain from '../../Assets/home_07-2.png';
 import Sky from '../../Assets/home_07-3.png';
+import White from '../../Assets/home_08-1.svg';
+import Blue from '../../Assets/home_08-2.svg';
+import Red from '../../Assets/home_08-3.svg';
 import * as S from './style';
 
 export default function Products() {
@@ -168,6 +172,17 @@ export default function Products() {
                 <Button label='Order Now' />
               </Price>
             </S.PriceGrid>
+          </Wrapper>
+        </Container>
+        <Container>
+          <Wrapper align='center' direction='column'>
+            <Title>What Clients Say</Title>
+            <Sub align='center' margin='1' width='50'>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</Sub>
+            <S.ClientGrid>
+              <Testimonials img={White} />
+              <Testimonials img={Blue} />
+              <Testimonials img={Red} />
+            </S.ClientGrid>
           </Wrapper>
         </Container>
       </main>

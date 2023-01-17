@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Card = styled.div`
-  padding-block: 1.5rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -61,23 +61,21 @@ export const Card = styled.div`
   }
 
   ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
     list-style: none;
   }
 
   li {
+    margin-block-start: 1rem;
     font-size: clamp(1rem, 1.1vw, 1.4rem);
     font-family: var(--ff-primary);
     font-weight: var(--fw-500);
     color: var(--clr-dark);
+    text-align: center;
   }
 
   button{
     padding: .5em 1em;
-    margin-block-start: 3rem;
+    margin-block-start: clamp(1rem, 3vw, 4rem);
     border-radius: 8px;
   }
 

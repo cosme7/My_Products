@@ -11,10 +11,7 @@ export const Card = styled.div`
     }
 
     div{
-        padding: 1.5rem 0rem 1.5rem clamp(1px, 1.2vw, 1.5rem);
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        padding: 1.5rem 0rem 1.5rem clamp(1px, 1.4vw, 1.7rem);
     }
 
     p{
@@ -26,6 +23,7 @@ export const Card = styled.div`
 
     h6{
         max-width: 20ch;
+        margin-block-start: 1rem;
         font-size: clamp(1.5rem, 1.8vw, 2.4rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-700);

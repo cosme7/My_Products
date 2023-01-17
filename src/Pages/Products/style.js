@@ -206,3 +206,16 @@ export const PriceGrid = styled.div`
         grid-template-columns: 1fr;
     };
 `;
+
+export const ClientGrid = styled.div`
+    width: 100%;
+    margin-block: clamp(1rem, 2vw, 3rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(1rem, 2vw, 3rem);
+    place-items: center;
+
+    @media screen and (max-width:53em){
+        grid-template-columns: 1fr;
+    };
+`;
