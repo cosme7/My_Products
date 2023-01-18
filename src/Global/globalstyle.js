@@ -30,6 +30,7 @@ export default createGlobalStyle`
     --bg-accent: #02897a;
     --bg-dark: #22343D;
     --bg-light: #FFFFFF;
+    --bg-light-300: #E8E8E8;
     --bg-none: transparent;
     /* Font-Color */
     --clr-accent: #02897a;

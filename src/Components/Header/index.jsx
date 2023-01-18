@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import Navigation from '../Navigation';
 import Button from '../Button';
 import { Link } from 'react-router-dom';
-import Logo from '../../Assets/home_00.png'
-import * as S from './style'
+import Logo from '../../Assets/logo_00.png';
+import * as S from './style';
 
 export default function Header() {
   return (
@@ -15,7 +15,7 @@ export default function Header() {
               <img src={Logo} alt="Logo" title="Logo" />
               <h1>Product</h1>
             </S.LogoBox>
-            <Navigation>
+            <Navigation hover='true'>
               <ul>
                 <li>
                   <Link to='/'>Product</Link>

@@ -21,22 +21,35 @@ export const Navigation = styled.nav`
         text-decoration: none;
     }
 
-    a:where(:hover, focus-visible){
-        -webkit-text-stroke: .6px var(--txt-clr);
-    }
-
     div{
         display: flex;
         gap: 1.5rem;
     }
 
     ${({column}) => column !== "col" && css`
+        justify-content: flex-start;
+
         ul{
             flex-direction: column;
+            gap: .7rem;
         }
 
+        a{
+            font-weight: var(--fw-400);
+        }
+
+        @media screen and (max-width:53em){
+            width: 100%;
+            
+            ul{
+                align-items: center;
+            }
+        };
+    `};
+
+    ${({hover}) => hover !== 'focus' && css`
         a:where(:hover, focus-visible){
-            -webkit-text-stroke: none;
+            -webkit-text-stroke: .6px var(--txt-clr);
         }
     `};
 `;
