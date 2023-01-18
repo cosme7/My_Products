@@ -21,6 +21,6 @@ Projeto Desenvolvido em React.Js, utilizando Styled-Components e React-Router-DO
 ## Créditos: @wahidari - Figma
 ##### Template Base: https://www.figma.com/file/NPT4BhtyiYhZ4xXjzu4fz2/MyProduct-(Community)?node-id=0%3A1&t=VhzW6VSUjLmuoebP-0
 
-#### Deploy: Not Today! XD
+#### Deploy: https://products-cs7.netlify.app/
 
 <a href="https://www.linkedin.com/in/cosme-da-silva-leite-08baa3219/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
