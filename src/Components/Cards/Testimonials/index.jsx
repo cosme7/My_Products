@@ -8,7 +8,7 @@ export default function Testimonials({img}) {
     <>
       <S.Testimonials>
         <img src={Stars} alt="" />
-        <Sub width='27'>Product helps you see how many more days you need to work to reach your financial goal.</Sub>
+        <Sub change='ok' width='27'>Product helps you see how many more days you need to work to reach your financial goal.</Sub>
         <div>
           <img src={img} alt="Testimonial" title="Testimonial" />
           <span>

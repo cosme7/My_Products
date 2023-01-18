@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Sub = styled.p`
     max-width: ${({width}) => width}ch;
@@ -12,4 +12,8 @@ export const Sub = styled.p`
     @media screen and (max-width:53em){
         margin-block: ${({mobile}) => mobile}rem;
     };
+
+    ${({change}) => change !== 'theme' && css`
+        color: var(--clr-dark);
+    `};
 `;

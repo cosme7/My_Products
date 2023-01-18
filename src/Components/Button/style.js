@@ -18,7 +18,7 @@ export const Btn = styled.button`
     ${({btnBorder}) => btnBorder !== 'border' && css`
         border: var(--btn-border);
         background-color: var(--bg-none);
-        color: var(--clr-dark);
+        color: var(--txt-clr);
     `};
 
     ${({transparent}) => transparent !== 'transp' && css`

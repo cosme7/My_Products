@@ -3,6 +3,6 @@ import * as S from './style';
 
 export default function Customers() {
   return (
-    <div>Page Customers</div>
+    <S.Holder>Page Customers</S.Holder>
   );
 };

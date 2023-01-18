@@ -11,12 +11,12 @@ export const Container = styled.section`
     };
 
     ${({bg}) => bg !== 'bottom' && css`
-        background-image: var(--img-light-bt);
+        background-image: var(--img-bottom);
         background-position: center bottom;
     `};
 
     ${({other}) => other !== 'top' && css`
-        background-image: var(--img-light-tp);
+        background-image: var(--img-top);
         background-position: center top;
     `};
 `;

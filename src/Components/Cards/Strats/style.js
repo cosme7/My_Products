@@ -18,7 +18,7 @@ export const Card = styled.div`
         font-size: clamp(1rem, 1.1vw, 1.4rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-400);
-        color: var(--txt-clr);
+        color: var(--clr-dark);
     }
 
     h6{
@@ -27,8 +27,7 @@ export const Card = styled.div`
         font-size: clamp(1.5rem, 1.8vw, 2.4rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-700);
-        color: var(--txt-clr);
-        transition: color .4s ease-in-out;
+        color: var(--clr-dark);
     }
 
     &:hover h6,

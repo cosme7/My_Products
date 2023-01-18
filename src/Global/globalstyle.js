@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import Ellight from '../Assets/home_02-5.png';
-import EllDark from '../Assets/home_02-6.png';
-import EllTopLight from '../Assets/home_06.png';
-import EllTopDark from '../Assets/home_06-1.png';
+import Ellight from "../Assets/home_02-5.png";
+import EllDark from "../Assets/home_02-6.png";
+import EllTopLight from "../Assets/home_06.png";
+import EllTopDark from "../Assets/home_06-1.png";
 
 export default createGlobalStyle`
 
@@ -28,7 +28,7 @@ export default createGlobalStyle`
     --fw-300: 300;
     /* Background-Color */
     --bg-accent: #02897a;
-    --bg-dark: #22343D;
+    --bg-dark: #1f2e35;
     --bg-light: #FFFFFF;
     --bg-light-300: #E8E8E8;
     --bg-none: transparent;
@@ -47,13 +47,22 @@ export default createGlobalStyle`
 }
 
 body{
-    /* Font */
-    --heading-logo: var(--clr-logo);
-    --txt-clr: var(--clr-dark);
+    /* Font Color*/
+    --heading-logo: ${(props) => props.theme.logoLight};
+    --txt-clr: ${(props) => props.theme.clrLight};
     /* Background */
-    --bg-container: var(--bg-light);
+    --bg-container: ${(props) => props.theme.bgLight};
+    /* Backgroumd Image */
+    --img-bottom: ${(props) => props.theme.imgBottom};
+    --img-top: ${(props) => props.theme.imgTop};
     /* Menu */
-    --menu: var(--bg-accent);
+    --menu: ${(props) => props.theme.menuLight};
+    /* Background Body */
+    background-color: var(--bg-container);
+}
+
+* > * {
+    transition: all .3s linear;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */

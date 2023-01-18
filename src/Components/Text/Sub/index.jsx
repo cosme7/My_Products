@@ -1,9 +1,9 @@
 import React from 'react';
 import * as S from './style';
 
-export default function Sub({children, ...rest}){
+export default function Sub({change='theme', children, ...rest}){
   return (
-    <S.Sub {...rest}>
+    <S.Sub change={change} {...rest}>
       {children}
     </S.Sub>
   );

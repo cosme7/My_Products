@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
 export const LogoBox = styled.div`
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: clamp(.5rem, 1vw, 1.3rem);
 
     img{
         width: 45px;

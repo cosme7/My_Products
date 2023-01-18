@@ -3,6 +3,6 @@ import * as S from './style';
 
 export default function Pricing() {
   return (
-    <div>Page Pricing</div>
+    <S.Holder>Page Pricing</S.Holder>
   );
 };
