@@ -52,6 +52,8 @@ body{
     --txt-clr: var(--clr-dark);
     /* Background */
     --bg-container: var(--bg-light);
+    /* Menu */
+    --menu: var(--bg-accent);
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */

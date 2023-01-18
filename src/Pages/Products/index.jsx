@@ -38,7 +38,7 @@ export default function Products() {
     <>
       <main>
         <Container>
-          <Wrapper align='center' img='true' mobile='column-reverse'>
+          <Wrapper align='center' img='ok' mobile='column-reverse'>
             <S.WorkTxt>
               <h2>Work at the speed of thought</h2>
               <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
@@ -71,7 +71,7 @@ export default function Products() {
           </Wrapper>
         </Container>
         <Container>
-          <Wrapper align='center' img='true' mobile='column-reverse'>
+          <Wrapper align='center' img='ok' mobile='column-reverse'>
             <S.PlansBox>
               <SubTitle mobile='0.5'>Effortless Validation for</SubTitle>
               <Title>Management</Title>
@@ -91,7 +91,7 @@ export default function Products() {
           </Wrapper>
         </Container>
         <Container>
-          <Wrapper align='center' img='true' mobile='column'>
+          <Wrapper align='center' img='ok' mobile='column'>
             <img src={Search} alt='Support' title='Support' />
             <S.SupTxt>
               <SubTitle mobile='0.5'>Easier decision making for</SubTitle>
@@ -106,7 +106,7 @@ export default function Products() {
           </Wrapper>
         </Container>
         <Container>
-          <Wrapper align='center' img='true'mobile='column-reverse'>
+          <Wrapper align='center' img='ok'mobile='column-reverse'>
             <S.PlansBox>
               <SubTitle>Optimisation for</SubTitle>
               <Title>Collaborative</Title>
@@ -169,8 +169,8 @@ export default function Products() {
               <Price title='Free' price='0' operators='Only 2 Operators'>
                 <Button label='Order Now' />
               </Price>
-              <Price title='Standard' price='5' operators='5+ Operators' inverted='true'>
-                <Button inverted='true' label='Order Now' />
+              <Price title='Standard' price='5' operators='5+ Operators' inverted='ok'>
+                <Button inverted='ok' label='Order Now' />
               </Price>
               <Price title='Premium' price='10' operators='10+ Operators'>
                 <Button label='Order Now' />

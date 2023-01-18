@@ -1,4 +1,5 @@
 import React from 'react';
+import Menu from '../Menu';
 import Navigation from '../Navigation';
 import Button from '../Button';
 import { Link } from 'react-router-dom';
@@ -15,7 +16,8 @@ export default function Header() {
               <img src={Logo} alt="Logo" title="Logo" />
               <h1>Product</h1>
             </S.LogoBox>
-            <Navigation hover='true'>
+            <Menu />
+            <Navigation hover='true' hidden='ok'>
               <ul>
                 <li>
                   <Link to='/'>Product</Link>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    padding: 1.2rem 0.5rem;
+    padding: 1.2rem 1rem;
     background-color: var(--bg-container);
 `;
 
@@ -10,6 +10,10 @@ export const Wrapper = styled.div`
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width:62.5em){ 
+        width: 100%;
+    };
 `;  
 
 export const LogoBox = styled.div`
