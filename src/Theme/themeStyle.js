@@ -40,6 +40,8 @@ export const lightTheme = {
   imgBottom: 'var(--img-light-bt)',
   imgTop: 'var(--img-light-tp)',
   menuLight: 'var(--bg-accent)',
+  gdLight: 'var(--gd-light)',
+  borderLight: 'var(--bg-light-200)',
   toogleLight: 'var(--toogleLight)',
 };
 
@@ -50,5 +52,7 @@ export const darkTheme = {
   imgBottom: 'var(--img-dark-bt)',
   imgTop: 'var(--img-dark-tp)',
   menuLight: 'var(--bg-light)',
+  gdLight: 'var(--bg-dark-100)',
+  borderLight: 'var(--bg-dark-200)',
   toogleLight: 'var(--toogleDark)',
 };

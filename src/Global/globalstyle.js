@@ -29,9 +29,19 @@ export default createGlobalStyle`
     /* Background-Color */
     --bg-accent: #02897a;
     --bg-dark: #1f2e35;
+    --bg-dark-100: #22343D;
+    --bg-dark-200: #474747;
     --bg-light: #FFFFFF;
+    --bg-light-200: #E7E7E7;
     --bg-light-300: #E8E8E8;
     --bg-none: transparent;
+    /* Background-Image */
+    --img-light-bt: url(${Ellight});
+    --img-dark-bt: url(${EllDark});
+    --img-light-tp: url(${EllTopLight});
+    --img-dark-tp: url(${EllTopDark});
+    /* Background-Gradient */
+    --gd-light: linear-gradient(180deg, #F6F6F6 0%, rgb(246, 246, 246, 0) 100%);
     /* Font-Color */
     --clr-accent: #02897a;
     --clr-dark: #22343D;
@@ -39,26 +49,25 @@ export default createGlobalStyle`
     --clr-logo: #173A56;
     /* Border */
     --btn-border: 1px solid #BCD0E5;
-    /* Background-Image */
-    --img-light-bt: url(${Ellight});
-    --img-dark-bt: url(${EllDark});
-    --img-light-tp: url(${EllTopLight});
-    --img-dark-tp: url(${EllTopDark});
 }
 
 body{
+    /* Background Body */
+    background-color: var(--bg-container);
     /* Font Color*/
     --heading-logo: ${(props) => props.theme.logoLight};
     --txt-clr: ${(props) => props.theme.clrLight};
     /* Background */
     --bg-container: ${(props) => props.theme.bgLight};
+    /* Background-Gradient */
+    --gradient: ${(props) => props.theme.gdLight};
     /* Backgroumd Image */
     --img-bottom: ${(props) => props.theme.imgBottom};
     --img-top: ${(props) => props.theme.imgTop};
     /* Menu */
     --menu: ${(props) => props.theme.menuLight};
-    /* Background Body */
-    background-color: var(--bg-container);
+    /* Details Border */
+    --details: ${(props) => props.theme.borderLight};
 }
 
 * > * {
