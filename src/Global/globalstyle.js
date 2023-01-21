@@ -32,6 +32,7 @@ export default createGlobalStyle`
     --bg-dark-100: #22343D;
     --bg-dark-200: #474747;
     --bg-light: #FFFFFF;
+    --bg-light-100: #F5F5F5;
     --bg-light-200: #E7E7E7;
     --bg-light-300: #E8E8E8;
     --bg-none: transparent;
@@ -49,6 +50,7 @@ export default createGlobalStyle`
     --clr-logo: #173A56;
     /* Border */
     --btn-border: 1px solid #BCD0E5;
+    --offer-border: #DEDEDE;
 }
 
 body{
@@ -59,6 +61,7 @@ body{
     --txt-clr: ${(props) => props.theme.clrLight};
     /* Background */
     --bg-container: ${(props) => props.theme.bgLight};
+    --light-accent: ${(props) => props.theme.greyLight};
     /* Background-Gradient */
     --gradient: ${(props) => props.theme.gdLight};
     /* Backgroumd Image */
@@ -66,7 +69,7 @@ body{
     --img-top: ${(props) => props.theme.imgTop};
     /* Menu */
     --menu: ${(props) => props.theme.menuLight};
-    /* Details Border */
+    /* Border's */
     --details: ${(props) => props.theme.borderLight};
 }
 

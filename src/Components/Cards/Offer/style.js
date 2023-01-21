@@ -1,10 +1,24 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Card = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: ${({align}) => align};
     gap: 1rem;
+
+    ${({bd}) => bd !== 'border' && css`
+        padding: 2rem;
+        border: 1px solid var(--offer-border);
+        border-radius: 10px;
+
+        h3, p{
+            text-align: center;
+        }
+
+        @media screen and (max-width:53em){
+            padding: 2rem 1rem;
+        }
+    `};
 
     h3{
         font-size: clamp(1.3rem, 1.5vw, 2rem);
@@ -14,8 +28,8 @@ export const Card = styled.div`
     }
 
     p{
-        max-width: 24ch;
-        font-size: clamp(1rem, 1.1vw, 1.4rem);
+        max-width: 26.35ch;
+        font-size: clamp(1rem, 1.2vw, 1.4rem);
         font-family: var(--ff-primary);
         font-weight: var(--fw-400);
         color: var(--txt-clr);

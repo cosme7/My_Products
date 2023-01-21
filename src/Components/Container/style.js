@@ -10,6 +10,11 @@ export const Container = styled.section`
         background-size: 200% 40%;
     };
 
+    ${({gr}) => gr !== 'accent' && css`
+        padding-block: .5rem clamp(2rem, 3.7vw, 4.5rem);
+        background-color: var(--light-accent);
+    `};
+
     ${({gd}) => gd !== 'gradient' && css`
         background: var(--gradient);
 
