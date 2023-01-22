@@ -1,5 +1,7 @@
 # My Product
 
+<img width="600" src="src/Assets/Demo/Desktop.png" alt='Desktop' title="Desktop"/>
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/cosme7/My_Products?color=purple&style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/cosme7/My_Products?color=purple&style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/cosme7/My_Products?color=purple&style=for-the-badge)
@@ -12,11 +14,13 @@ Projeto Desenvolvido em React.Js, utilizando Styled-Components e React-Router-DO
 * React-Router-DOM
 * Styled-Components
 
-## O que foi feito & será feito XD:
+## O que foi feito:
 * Acessibilidade
 * Responsividade
 * Rotas
 * Troca de Themes
+
+<img width="200" src="src/Assets/Demo/Mobile.png" alt='Mobile' title="Mobile">
 
 ## Créditos: @wahidari - Figma
 ##### Template Base: https://www.figma.com/file/NPT4BhtyiYhZ4xXjzu4fz2/MyProduct-(Community)?node-id=0%3A1&t=VhzW6VSUjLmuoebP-0
