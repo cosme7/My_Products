@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//*  Components
+//* Components
 import Container from '../../Components/Container'
 import Wrapper from '../../Components/Wrapper';
 import Button from '../../Components/Button';

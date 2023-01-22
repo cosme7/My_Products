@@ -1,5 +1,5 @@
 import React from 'react';
-//*  Components
+//* Components
 import Container from '../../Components/Container'
 import Wrapper from '../../Components/Wrapper';
 import Button from '../../Components/Button';
@@ -47,7 +47,7 @@ export default function Pricing() {
         </Container>
         <Container>
           <Title align='center' margin='5' mobile='1'>Product is being used with great effects alongside:</Title>
-          <Wrapper img='ok' align='center' mobile='column' gap='2'>
+          <Wrapper align='center' mobile='column' gap='2'>
             <S.Picture>
               <source srcSet={Mobile} media='(max-width: 53em)' />
               <img src={Data} alt="Data Files" title="Data Files" />

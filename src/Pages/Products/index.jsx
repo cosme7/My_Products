@@ -1,5 +1,5 @@
 import React from 'react';
-//*  Components
+//* Components
 import Container from '../../Components/Container'
 import Wrapper from '../../Components/Wrapper';
 import Button from '../../Components/Button';

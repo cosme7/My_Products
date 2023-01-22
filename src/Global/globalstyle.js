@@ -71,6 +71,10 @@ body{
     --menu: ${(props) => props.theme.menuLight};
     /* Border's */
     --details: ${(props) => props.theme.borderLight};
+    /* Input */
+    --input: ${(props) => props.theme.input};
+    /* Form */
+    --form: ${(props) => props.theme.form};
 }
 
 * > * {

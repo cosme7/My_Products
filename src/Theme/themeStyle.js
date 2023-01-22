@@ -43,6 +43,8 @@ export const lightTheme = {
   menuLight: 'var(--bg-accent)',
   gdLight: 'var(--gd-light)',
   borderLight: 'var(--bg-light-200)',
+  input: 'var(--bg-light-300)',
+  form: 'var(--bg-none)',
   toogleLight: 'var(--toogleLight)',
 };
 
@@ -56,5 +58,7 @@ export const darkTheme = {
   menuLight: 'var(--bg-light)',
   gdLight: 'var(--bg-dark-100)',
   borderLight: 'var(--bg-dark-200)',
+  input: 'var(--bg-light)',
+  form: 'var(--bg-dark-100)',
   toogleLight: 'var(--toogleDark)',
 };

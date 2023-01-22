@@ -11,7 +11,7 @@ export const Card = styled.div`
     }
 
     div{
-        padding: 1.5rem 0rem 1.5rem clamp(1px, 1.4vw, 1.7rem);
+        padding: 1.5rem clamp(.5rem, 1.4vw, 1.7rem) 1.5rem;
     }
 
     p{
@@ -34,10 +34,4 @@ export const Card = styled.div`
     &:focus h6{
         color: var(--clr-accent);
     }
-
-    @media screen and (max-width:53em){
-        div{
-            padding: 1.5rem 2px;
-        }
-    };
 `;
